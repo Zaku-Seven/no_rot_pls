@@ -1,0 +1,22 @@
+{
+    "name": "no_rot_pls",
+    "description": "banning websites that distract me",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": [
+        "declarativeNetRequest"
+    ],
+    "host_permissions": [
+        "*://*.instagram.com/*",
+        "*://*.tiktok.com/*"
+    ],
+    "declarative_net_request": {
+        "rule_resources": [
+            {
+                "id": "ruleset_1",
+                "enabled": true,
+                "path": "rules_1.json"
+            }
+        ]
+    }
+}
